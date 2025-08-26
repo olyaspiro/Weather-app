@@ -1,5 +1,5 @@
 // src/components/UnitToggle.tsx
-import type { Units } from "./types/weather";
+import type { Units } from "./../types/weather";
 
 interface Props {
   units: Units;
