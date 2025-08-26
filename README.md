@@ -1,69 +1,28 @@
-# React + TypeScript + Vite
+Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Weather App is a React + TypeScript-based application that allows users to check real-time weather conditions for any city. It demonstrates practical use of React, TypeScript, and CSS, offering a clean, interactive interface with responsive design for both desktop and mobile devices.
 
-Currently, two official plugins are available:
+Users can search for cities, toggle between Celsius and Fahrenheit, and view detailed weather information including temperature, “feels like”, humidity, wind speed, and weather conditions. Dynamic backgrounds and subtle animations enhance the user experience, making the app portfolio-ready.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Features:
+- Search for any city worldwide
+- Toggle between °C (metric) and °F (imperial)
+- Display of weather details: temperature, feels like, humidity, wind, and conditions
+- Dynamic backgrounds based on current weather
+- Animated weather icons for engaging UI
+- Responsive design for all screen sizes
+- Smooth transitions and interactive elements for polished interface
 
-## Expanding the ESLint configuration
+Technologies Used:
+- React with hooks
+- TypeScript
+- CSS (including animations and transitions)
+- Vite (build tool)
+- OpenWeatherMap API for weather data
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Skills Highlighted:
+- React component design and state management
+- Fetching and handling external API data with TypeScript
+- Conditional rendering and dynamic styling
+- Responsive and user-focused UI design
+- Portfolio-ready interactive web application
